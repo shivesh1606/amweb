@@ -4,12 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="design.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   <title>Photo Junky</title>
 </head>
 <body>
+    <section class="firstpage">
     <header >
         <div class="logo">
           <img src="coding.jpg">
@@ -17,8 +19,8 @@
         </div>
         
         <ul>
-        <li><a href="index.html" >Home</a></li>
-        <li><a href="#" class="active">About</a></li>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="index.html" >Gallery</a></li>
         <li><a href="work.html">Work</a></li>
         <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -51,9 +53,53 @@
         </button>
       </div>
       <button class="glow-on-hover" type="button">
-        Explore More
+        <a href="#gallery">Straight To Gallery</a>
 
       </button>
   </div>
+  </section>
+  <section class="gallery min-vh-100" id="gallery">
+    <div class="container-lg">
+       <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+          <div class="col">
+             <img src="pexels-aistė-sveikataitė-1535421.jpg" class="gallery-item" alt="gallery">
+          </div>
+          <div class="col">
+             <img src="pexels-azim-islam-1210276.jpg" class="gallery-item" alt="gallery">
+          </div>
+          <div class="col">
+             <img src="pexels-gdtography-950241.jpg" class="gallery-item" alt="gallery">
+          </div>
+          <div class="col">
+             <img src="pexels-nick-collins-1293120.jpg" class="gallery-item" alt="gallery">
+          </div>
+          <div class="col">
+             <img src="pexels-pixabay-301673.jpg" class="gallery-item" alt="gallery">
+          </div>
+          <div class="col">
+             <img src="background.jpg" class="gallery-item" alt="gallery">
+          </div>
+       </div>
+    </div>
+ </section>
+
+<!-- Modal -->
+<div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ <div class="modal-dialog modal-dialog-centered modal-lg">
+   <div class="modal-content">
+     <div class="modal-header">
+       <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+     </div>
+     <div class="modal-body">
+        <img src="river.jpg" class="modal-img" alt="modal img">
+     </div>
+   </div>
+ </div>
+</div>
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
