@@ -12,20 +12,39 @@
 </head>
 <body>
     <section class="firstpage">
-    <header >
-        <div class="logo">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container-fluid">
+        <div class="navbar-brand" href="#">
           <img src="coding.jpg">
           <a href="ktj/index.html" >D_V@16</a>
         </div>
-        
-        <ul>
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="index.html" >Gallery</a></li>
-        <li><a href="work.html">Work</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </header>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="padding-left: 50%;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            
+        </div>
+      </div>
+    </nav>
     <div class="container">
+      <figure class="text-center">
+        <blockquote class="blockquote">
+          <h2>Photography takes an instant out of time, altering life by holding it still.</h2>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          <cite title="Source Title">Dorothea Lange</cite>
+        </figcaption>
+      </figure>
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -58,48 +77,79 @@
       </button>
   </div>
   </section>
-  <section class="gallery min-vh-100" id="gallery">
-    <div class="container-lg">
-       <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
-          <div class="col">
-             <img src="pexels-aistė-sveikataitė-1535421.jpg" class="gallery-item" alt="gallery">
-          </div>
-          <div class="col">
-             <img src="pexels-azim-islam-1210276.jpg" class="gallery-item" alt="gallery">
-          </div>
-          <div class="col">
-             <img src="pexels-gdtography-950241.jpg" class="gallery-item" alt="gallery">
-          </div>
-          <div class="col">
-             <img src="pexels-nick-collins-1293120.jpg" class="gallery-item" alt="gallery">
-          </div>
-          <div class="col">
-             <img src="pexels-pixabay-301673.jpg" class="gallery-item" alt="gallery">
-          </div>
-          <div class="col">
-             <img src="background.jpg" class="gallery-item" alt="gallery">
-          </div>
-       </div>
+  <section id="gallery">
+    <img id="myImg" src="a.jpg" alt="Snow" style="width:100%;max-width:300px">
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
     </div>
- </section>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magnam quisquam molestias perspiciatis, cum ea accusamus itaque optio natus dignissimos quo nihil alias! Quidem quaerat vitae nobis quae quas nostrum!
+    Ducimus veritatis perspiciatis sit incidunt quod a earum cupiditate delectus, nihil provident nisi ea fuga maxime commodi odit. Quo et aspernatur nisi cupiditate veritatis soluta rem consequuntur adipisci aut expedita!
+    Sequi iste, eaque quam eum soluta corporis et in assumenda nulla odit nisi ab voluptas recusandae aperiam aspernatur veniam saepe vel doloribus. Nisi, eaque! Doloribus velit ab totam ad dolore?
+    Deleniti doloremque aspernatur, animi nobis, repudiandae praesentium non, nihil porro quia error labore. Ratione impedit eos earum blanditiis aut! Accusamus repellat quaerat doloribus aperiam necessitatibus animi fuga, sed quam cum?
+    Commodi et totam iusto alias ducimus laudantium quo ut consectetur debitis optio nemo laborum, quibusdam dolorum, maiores assumenda facere, doloribus nesciunt reiciendis. Perspiciatis, nihil ea. Obcaecati suscipit voluptate molestiae temporibus!
+    Quidem non laudantium sequi atque ut, fugiat molestiae illo expedita, illum quasi, molestias quisquam perferendis laborum? Iusto tempore omnis provident ratione excepturi! Voluptate temporibus perferendis deserunt atque alias veritatis ducimus.
+    Assumenda maiores dolores perspiciatis, corporis possimus repellendus, saepe minus harum architecto facere beatae at magnam sequi voluptatem aliquid enim, molestiae quisquam voluptate. Voluptas vitae odio minima quisquam illo, in cum?
+    Laboriosam quaerat, sunt non, debitis sapiente omnis a harum placeat ullam architecto error culpa nostrum id nihil quibusdam blanditiis tempora sint! Nulla, nisi quo. A, accusantium? Officiis, at. Saepe, nostrum.
+    Inventore reprehenderit tenetur quidem eaque soluta magnam similique voluptatem aliquam doloremque adipisci quibusdam perspiciatis, officia esse amet non dolorum laboriosam quis ipsam fuga, doloribus iusto, officiis dignissimos? Autem, numquam vero?
+    Molestiae natus libero consequuntur vero rem alias voluptatibus quidem sed quis animi officia eligendi perferendis blanditiis aut debitis, quas incidunt quos unde voluptas magnam itaque labore amet. Quibusdam, officiis quia.
+    Officia rerum praesentium, fuga laboriosam reiciendis magni corrupti minima veniam asperiores deleniti non, dolore perferendis iste debitis iusto similique ad ratione labore autem suscipit. Odit enim non ratione. Natus, sunt.
+    Aliquam qui possimus perferendis error ipsam, sed quasi id nihil libero maxime eaque corrupti quisquam, architecto tempore? Eum, voluptatibus recusandae, deserunt cupiditate, nesciunt facilis inventore consectetur optio quae sequi mollitia.
+    Harum quis deleniti vero, corrupti quidem necessitatibus nobis? Quam cupiditate inventore repellat blanditiis molestias excepturi sit esse, voluptates tempora, voluptatem deleniti dolorem ratione officiis accusantium amet animi, cumque quibusdam alias.
+    Soluta aut similique eaque, recusandae perspiciatis iusto ipsam, corrupti ex deleniti sed pariatur dolore vel odit non adipisci modi dignissimos laboriosam repudiandae qui consequatur quae. Cupiditate sit quisquam quas neque!
+    Nam maiores inventore adipisci ratione! Velit tempore quo sequi commodi laboriosam! Ut molestiae sunt nulla dolores fugit quia ipsum iste, nobis facere? Ipsum harum, praesentium quos sapiente mollitia nam eum.
+    Distinctio nemo reiciendis corrupti nam culpa dolorem consectetur voluptates. Rem molestias repellendus sapiente animi nesciunt, magnam assumenda odio id dignissimos culpa voluptates. Eius alias culpa perferendis illo accusamus commodi et!
+    Minima porro excepturi facere magnam id animi veritatis quis molestias iste exercitationem ex quisquam magni ab quas consequatur, est at vel asperiores. Voluptate et harum ratione soluta, blanditiis ex fugit.
+    Hic quaerat aperiam saepe, fugiat odit animi, obcaecati accusantium esse dolores laudantium omnis excepturi aspernatur voluptatum voluptate vitae possimus voluptatem cupiditate. Excepturi, impedit corrupti? Dolorum fuga adipisci provident eligendi at.
+    Quis blanditiis rem harum minus placeat sequi, saepe veritatis quam inventore sit corrupti laborum accusamus atque eos fugiat aspernatur autem impedit fuga. Error vero commodi minima libero similique incidunt sunt?
+    Ad exercitationem repudiandae sit nulla inventore odit quos hic atque animi, architecto libero dolores delectus nesciunt natus magnam dolore, fugit fuga impedit! Fugiat eligendi hic officia quibusdam vero optio similique!
+    Fugiat id officiis et ullam quae veniam earum odio ab aut quod? Molestias beatae ipsa nobis consequatur necessitatibus iusto error, perspiciatis, sapiente sequi reprehenderit, quam assumenda non unde laborum porro.
+    Deleniti, eligendi corrupti, esse eaque, ab commodi itaque maiores consequuntur in eius accusamus modi molestiae! Debitis, aut sint ad temporibus provident assumenda ea perspiciatis vitae, facere eum earum? Dolorem, fugit!
+    Dolore, consectetur harum! Ullam ut, sint quam quaerat consequatur modi commodi nemo, voluptate nisi placeat aperiam eaque tenetur ipsum repellendus, rerum quas consectetur vitae consequuntur quo illum qui molestias tempora.
+    Laudantium, doloremque officia suscipit odio accusamus doloribus nesciunt cumque ducimus ullam velit, reiciendis in nulla quibusdam sed? Amet ipsa iusto unde blanditiis, dolores quia culpa nihil, beatae, veritatis quo doloribus?
+    Quis reiciendis a libero soluta, quidem molestiae voluptatibus itaque veniam provident eligendi neque eaque sequi tempore doloribus asperiores vitae quod nam quibusdam minima? Voluptates dolorem harum, quae repellendus est aspernatur!
+    Sunt sapiente incidunt ut soluta aliquid doloribus expedita sint? Corporis unde maiores quos in nihil nesciunt ut veritatis dolor quas enim! In fugit illo deleniti aliquam magnam sequi alias doloribus?
+    Ab, non nobis? Quidem cumque, nisi numquam tenetur commodi doloremque similique ea rerum consequatur harum molestias, incidunt non quibusdam reprehenderit quaerat animi sit! Voluptatum, tempora! Commodi expedita molestiae doloribus fugit?
+    Dolorum repellendus voluptatum cum ipsam tempore dolorem modi sit libero obcaecati dolores quos facere officiis velit laboriosam odio debitis id corrupti omnis dolore eum nobis, quas incidunt? Temporibus, architecto id!
+    Debitis cupiditate animi alias, tenetur quos nemo optio qui earum ducimus voluptatibus nam est veniam quaerat eum nulla, dignissimos doloremque nostrum eligendi asperiores rem non delectus deleniti. Asperiores, sint hic!
+    Distinctio harum iusto iste doloribus temporibus quisquam sunt excepturi, alias quam maxime, molestiae aperiam, adipisci tenetur? Minus animi illum eius enim, voluptatem earum eaque delectus necessitatibus ipsum. Magni, veritatis tempore?
+    Aliquid officia rerum, aspernatur earum quisquam minus mollitia. Quas ipsa libero tenetur. Provident illum quis voluptatem porro? Tempore ipsam officia impedit, magnam harum incidunt nobis saepe esse repellat, odit eos.
+    Accusamus maiores molestiae autem sequi? Autem, sit consectetur et, ducimus repudiandae architecto mollitia dignissimos saepe amet minus vel culpa nostrum, tempora dicta atque beatae officiis officia harum quo modi veniam?
+    Ipsum repellat corrupti iure incidunt quas atque cum dolorem, iusto ullam impedit doloribus enim consequatur earum fugit quo alias asperiores assumenda sunt cupiditate quidem. Voluptatem labore ex numquam cumque voluptate?
+    Eos nemo in, expedita repudiandae nostrum aliquid tenetur laboriosam facilis ratione neque repellendus incidunt rerum facere omnis. Voluptatibus temporibus eveniet quae provident ex quidem vel quas iusto laudantium, exercitationem optio?
+    Dolorum laborum harum commodi praesentium! Labore dolor, deserunt, esse cupiditate explicabo vero ab eos illum architecto pariatur numquam blanditiis reiciendis! Exercitationem eaque in libero, fugit facere sunt ratione natus a.
+    Harum facere id perferendis, numquam non quae maiores sapiente eveniet molestiae asperiores illo. Recusandae, voluptatum aut iure illum est sunt, enim ex esse magni voluptas nesciunt in ducimus at nam.
+    Vero, amet voluptatibus! Cumque at veniam, quae molestiae quo quibusdam consequuntur pariatur molestias, quos facilis harum deserunt voluptatum accusantium labore deleniti. Nam cumque eos qui voluptas sint molestiae praesentium illo?
+    Earum iusto, vel aut magnam cupiditate voluptas suscipit commodi distinctio aliquid aperiam consequuntur dolor repellendus doloribus eos sequi porro sapiente exercitationem a dolores, tempora fugit. Magnam distinctio id quas praesentium!
+    Consequuntur minima maxime inventore ex, nam numquam corrupti doloribus architecto harum tempore explicabo exercitationem pariatur, ut nobis molestiae provident, molestias sint suscipit? Rerum culpa optio nemo suscipit saepe officia aspernatur.
+    Provident cupiditate excepturi vitae soluta, officiis earum facere consequatur molestiae ipsam sit obcaecati quasi dolore eius maxime vel accusamus doloribus neque, modi ducimus ex dolores? Laborum doloremque magni aperiam natus?
 
-<!-- Modal -->
-<div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
- <div class="modal-dialog modal-dialog-centered modal-lg">
-   <div class="modal-content">
-     <div class="modal-header">
-       <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
-       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-     </div>
-     <div class="modal-body">
-        <img src="river.jpg" class="modal-img" alt="modal img">
-     </div>
-   </div>
- </div>
-</div>
+  </section>  
+    <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+    </script>
 
-
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/main.js"></script>
 </body>
 </html>
