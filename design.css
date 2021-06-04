@@ -1,0 +1,399 @@
+*
+{
+
+    text-align: center;
+}
+body
+{
+    align-items: center;
+    background: linear-gradient(rgba(85, 83, 83, 0.603),#101b1b,#6e7c7c, #8e9181);
+    padding: 0 0;
+
+    
+}
+html
+{
+    overflow-x: hidden;
+}
+.firstpage
+{
+    
+    background: linear-gradient(rgba(36, 35, 35, 0.6), rgba(0, 0, 0, 0.7)), url("img/pexels-gdtography-950241.jpg") no-repeat center
+}
+a
+{
+    text-decoration: none;
+    color: #eee;
+}
+
+.navbar 
+{
+    position: sticky;
+
+    width: 100vw;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+
+}
+
+.navbar-brand
+{
+    color: rgb(22, 20, 20);
+    font-weight: 700;
+    text-decoration: none;
+    font-size:  2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+}
+.navbar-brand img
+{
+    width: 90px;
+    border-radius: 10px 20px ;
+}
+.navbar-brand a
+{
+    text-transform: none;
+    color: rgb(255, 255, 255);
+
+}
+
+
+.nav-item .nav-link
+{
+    list-style: none;
+    margin-left: 20px;
+    font-weight: 400;
+}
+
+.nav-item .nav-link
+{
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 6px 15px;
+    color:black;
+    border-radius: 20px;
+}
+
+.nav-item .nav-link:hover,
+.nav-item .nav-link.active 
+{
+    background: #fff;
+
+}
+.me-auto 
+{
+  margin-right: 0 !important;
+}
+.navbar-collapse
+{
+  flex-grow: 0.4;
+}
+.container
+{
+    margin-top: 12px;
+}
+h1
+{
+    color: #fff;
+		font-size: 6rem;
+		font-family: "ubuntu";
+		text-transform: uppercase;
+		font-weight: 700;
+		font-family: "Josefin Sans", sans-serif;
+		background: linear-gradient(to right,#095fab 10%, #25abe8 50%, #57d75b 60%);
+		background-size: auto auto;
+		background-clip: border-box;
+		background-size: 200% auto;
+		color: #fff;
+		background-clip: text;
+        -webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		animation: textclip 1.5s linear infinite;
+		display: inline-block;
+		
+}
+@keyframes textclip {
+	to {
+		background-position: 200% center;
+	}
+}
+
+.text-center p{
+    margin-top: 1px;
+    font-size: 2.3rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.692);
+    font-family: 'Lora', serif;
+
+}
+.text-center .blockquote-footer
+{
+    margin-top: 1px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(11, 32, 126);
+    font-family: 'Lora', serif;
+}
+.carousel-inner
+{
+    max-height:70vh;
+    box-shadow: 
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+}
+img.d-block.w-100 
+{
+    height: 100%;
+    object-fit: cover;
+}
+
+.glow-on-hover {
+
+    margin-top: 5vh;
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.gallery
+{
+    background-color: transparent;
+    margin-top: 10vh;
+}
+
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:dodgerblue;
+    
+}
+.social-icons a.instagram:hover
+{
+  background-color:#fb39a1;
+}
+.social-icons a.github:hover
+{
+  background-color:lightseagreen;
+    
+}
+.social-icons a.linkedin:hover
+{
+  background-color: blueviolet;
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+ @media only screen and (max-width: 700px){
+ 
+    .navbar
+    {
+      padding-left: 40px;
+      padding-right: 40px;;
+    }
+    h1{
+        font-size: 4rem;
+    }
+  }
